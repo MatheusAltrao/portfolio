@@ -498,7 +498,7 @@ button {
 }
 .contact .contact-content .row {
   display: flex;
-  height: 65px;
+  height: 6rem;
   align-items: center;
 }
 .contact .contact-content .row .info {
@@ -513,6 +513,7 @@ button {
 }
 .contact .contact-content .info .sub-title {
   color: #fff;
+  width: 10rem;
 }
 .contact .right form .fields {
   display: flex;
