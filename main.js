@@ -40,7 +40,7 @@ $(document).ready(function () {
   })
 
   var typed = new Typed('.typing-2', {
-    strings: ['Gamer', 'Programador', 'Front-end', 'Freelancer', 'T.I'],
+    strings: ['Gamer', 'Desenvolvedor', 'Front-end', 'Freelancer', 'T.I'],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
