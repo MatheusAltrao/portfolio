@@ -421,7 +421,7 @@ button {
 }
 
 .project .b {
-  background-image: url(https://www.investimentosenoticias.com.br/media/k2/items/cache/5ac87dff1ebdf683ee223ff6d951d3f0_XL.jpg);
+  background-image: url(https://www.omni.com.br/assets/site/images/facebook.jpg);
 }
 
 .project .c {
@@ -429,7 +429,7 @@ button {
 }
 
 .project .d {
-  background-image: url(https://images.unsplash.com/photo-1562322140-8baeececf3df?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-image: url(https://cdn.shopify.com/s/files/1/0788/9687/files/Como_abrir_uma_loja_de_camisetas-varias.png?format=jpg&quality=90&v=1653836466);
 }
 
 .project .card__content {
@@ -593,6 +593,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 footer .logo {
@@ -623,19 +624,29 @@ footer img {
   font-size: 23px;
 }
 
-footer .back-to-top i {
+.back-to-top {
+  position: fixed;
+  z-index: 999;
   color: var(--body-color);
   background: var(--base-color);
   font-size: 40px;
-  border-radius: 40px;
+  clip-path: circle();
+
+  transform: translateY(100%);
+  visibility: hidden;
+
+  bottom: 10%;
+  right: 5%;
 }
 
-footer .back-to-top i:hover {
-  color: var(--base-color);
-  background: var(--body-color);
-  transition: 0.3s;
-  font-size: 40px;
-  border-radius: 40px;
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  filter: brightness(1.5);
 }
 
 /* ================responsive media ===================================*/

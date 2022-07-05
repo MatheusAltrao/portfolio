@@ -39,3 +39,32 @@ $(document).ready(function () {
     loop: true
   })
 })
+
+function backToTop() {
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+window.addEventListener('scroll', function () {
+  backToTop()
+})
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `
+  #about .title, #about .text,
+  #services .title, #services .card,
+  #project .title, #project .card,
+  #contact .title, #contact .text
+  `,
+  { interval: 100 }
+)
