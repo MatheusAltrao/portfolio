@@ -63,7 +63,7 @@ scrollReveal.reveal(
   `
   #about .title, #about .text,
   #services .title, #services .card,
-  #project .title, #project .card,
+  #project .title,
   #contact .title, #contact .text
   `,
   { interval: 100 }
